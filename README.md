@@ -110,19 +110,7 @@ Suitable for simple forms or inputs where real-time updates or validation are no
 Can be faster for large forms since there is no need for re-rendering when the component's state changes.
 
 Example of an uncontrolled component:
-**function UncontrolledInput() {
-  const inputRef = useRef(null);
-  const handleButtonClick = () => {
-    console.log(inputRef.current.value);
-  };
 
-  return (
-    <>
-      <input ref={inputRef} type="text" />
-      <button onClick={handleButtonClick}>Submit</button>
-    </>
-  );
-}**
 
 # Understanding "keys"
 
@@ -142,17 +130,7 @@ Here are a few important points to understand about keys in React:
 
 **Example: **
 
-**function MyList() {
-  const items = ['Apple', 'Banana', 'Orange'];
 
-  return (
-    <ul>
-      {items.map((item, index) => (
-        <li key={index}>{item}</li>
-      ))}
-    </ul>
-  );
-}**
 
 
 
